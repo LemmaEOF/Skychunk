@@ -12,3 +12,5 @@
 SkyChunk removes 95% of all chunks from the world, replacing them with air. Structures and the water in flooded caves are still preserved due to limitations with the generation system.
 
 This mod was made on request from ThatNEET_ on Twitch! If you want your own Fabric mod request, you can get one by watching [LemmaEOF](https://twitch.tv/LemmaEOF)'s streams.
+
+![](preview.png)
