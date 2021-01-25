@@ -1,28 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "starter",
+  "id": "skychunk",
   "version": "${version}",
 
-  "name": "Fabric Starter",
-  "icon": "assets/starter/icon.png",
-  "description": "Template for starting out Fabric mods",
+  "name": "SkyChunk",
+  "icon": "assets/skychunk/icon.png",
+  "description": "Removes 99% of chunks from the world. Mod request from ThatNEET_",
   "license": "MIT",
   "contact": {
-    "sources": "https://github.com/CottonMC/FabricStarter"
+    "sources": "https://github.com/Boundarybreaker/SkyChunk"
   },
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.cottonmc.starter.FabricStarter"
+      "space.bbkr.skychunk.Skychunk"
     ]
   },
   "mixins": [
-    "mixins.starter.json"
+    "mixins.skychunk.json"
   ],
   "depends": {
     "fabricloader": ">=0.4.0"
-  },
-  "custom": {
-    "modmenu:api": true
   }
 }
