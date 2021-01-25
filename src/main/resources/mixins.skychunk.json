@@ -3,6 +3,6 @@
   "package": "space.bbkr.skychunk.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinNoiseChunkGenerator"
+    "MixinChunkStatus"
   ]
 }
