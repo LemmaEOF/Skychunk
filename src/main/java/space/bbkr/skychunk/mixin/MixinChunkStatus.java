@@ -19,7 +19,7 @@ public class MixinChunkStatus {
 	private static final ChunkRandom skychunk$random = new ChunkRandom();
 
 	//lambda for NOISE
-	@Inject(method = "method_16564", at = @At("HEAD"), cancellable = true)
+	@Inject(method = {"method_16564", "lambda$static$5"}, at = @At("HEAD"), cancellable = true)
 	private static void cancelNoise(ServerWorld world, ChunkGenerator generator, List<Chunk> list, Chunk chunk, CallbackInfo info) {
 		if (shouldCancel(world, chunk, generator)) {
 			info.cancel();
@@ -27,7 +27,7 @@ public class MixinChunkStatus {
 	}
 
 	//lambda for SURFACE
-	@Inject(method = "method_16567", at = @At("HEAD"), cancellable = true)
+	@Inject(method = {"method_16567", "lambda$static$6"}, at = @At("HEAD"), cancellable = true)
 	private static void cancelSurfaceBuilding(ServerWorld world, ChunkGenerator generator, List<Chunk> list, Chunk chunk, CallbackInfo info) {
 		if (shouldCancel(world, chunk, generator)) {
 			info.cancel();
@@ -35,7 +35,7 @@ public class MixinChunkStatus {
 	}
 
 	//lambda for LIQUID_CARVERS
-	@Inject(method = "method_16569", at = @At("HEAD"), cancellable = true)
+	@Inject(method = {"method_16569", "lambda$static$8"}, at = @At("HEAD"), cancellable = true)
 	private static void cancelLiquidCarvers(ServerWorld world, ChunkGenerator generator, List<Chunk> list, Chunk chunk, CallbackInfo info) {
 		// Water caves make a mess of the world so we just turn them off
 		info.cancel();
