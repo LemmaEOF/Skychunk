@@ -1,8 +1,13 @@
 {
   "required": true,
   "package": "space.bbkr.skychunk.mixin",
+  "minVersion": "0.8",
   "compatibilityLevel": "JAVA_8",
+  "refmap": "skychunk.refmap.json",
   "mixins": [
     "MixinChunkStatus"
-  ]
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
