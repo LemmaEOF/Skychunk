@@ -13,6 +13,7 @@ import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.ChunkStatus;
 import net.minecraft.world.gen.ChunkRandom;
 import net.minecraft.world.gen.chunk.ChunkGenerator;
+import space.bbkr.skychunk.Skychunk;
 
 @Mixin(ChunkStatus.class)
 public class MixinChunkStatus {
@@ -50,6 +51,6 @@ public class MixinChunkStatus {
 		skychunk$random.setPopulationSeed(world.getSeed(), pos.x, pos.z);
 
 		int next = skychunk$random.nextInt(100);
-		return next < 95;
+		return next < Skychunk.chunkRemovalRate;
 	}
 }

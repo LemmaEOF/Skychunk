@@ -9,7 +9,7 @@ else
 fi
 rm -rf build/libs
 echo Building for Fabric...
-gw clean build
+./gradlew clean build
 rm build/libs/*-dev.jar
 raw=$(echo build/libs/skychunk*.jar)
 fabric=$(echo "$raw" |sed 's/skychunk-/skychunk-fabric-/')
@@ -17,7 +17,7 @@ mv "$raw" "$fabric"
 if [ "$canforgery" == "1" ]; then
 	cd forgery
 	echo Building Forgery runtime...
-	gw clean build
+	./gradlew clean build
 	cd ..
 	forge=$(echo "$fabric" | sed "s/fabric/forge/")
 	echo Running Forgery...

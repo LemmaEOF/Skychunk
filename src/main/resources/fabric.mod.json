@@ -6,6 +6,9 @@
   "name": "SkyChunk",
   "icon": "assets/skychunk/icon.png",
   "description": "Removes 99% of chunks from the world. Mod request from ThatNEET_",
+  "authors": [
+    "LemmaEOF"
+  ],
   "license": "MIT",
   "contact": {
     "sources": "https://github.com/Boundarybreaker/SkyChunk"
