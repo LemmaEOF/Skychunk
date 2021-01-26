@@ -14,3 +14,7 @@ SkyChunk removes 95% of all chunks from the world, replacing them with air. Stru
 This mod was made on request from ThatNEET_ on Twitch! If you want your own Fabric mod request, you can get one by watching [LemmaEOF](https://twitch.tv/LemmaEOF)'s streams.
 
 ![](preview.png)
+
+## About Forge
+
+SkyChunk uses **Forgery Tools** for its Forge port, as it is a primarily mixin mod. Forgery Tools is not currently publicly available. Please keep this in mind if you want to PR new features.
