@@ -1,6 +1,6 @@
 pluginManagement {
     repositories {
-        jcenter()
+        maven { url = "https://maven.quiltmc.org/repository/release" }
         maven {
             name = 'Fabric'
             url = 'https://maven.fabricmc.net/'
