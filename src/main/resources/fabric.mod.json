@@ -5,18 +5,18 @@
 
   "name": "SkyChunk",
   "icon": "assets/skychunk/icon.png",
-  "description": "Removes 99% of chunks from the world. Mod request from ThatNEET_",
+  "description": "Removes 95% of chunks from the world. Mod request from ThatNEET_",
   "authors": [
     "LemmaEOF"
   ],
   "license": "MIT",
   "contact": {
-    "sources": "https://github.com/Boundarybreaker/SkyChunk"
+    "sources": "https://github.com/LemmaEOF/SkyChunk"
   },
   "environment": "*",
   "entrypoints": {
     "main": [
-      "space.bbkr.skychunk.Skychunk"
+      "gay.lemmaeof.skychunk.Skychunk"
     ]
   },
   "mixins": [

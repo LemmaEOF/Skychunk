@@ -1,4 +1,4 @@
-package space.bbkr.skychunk;
+package gay.lemmaeof.skychunk;
 
 import java.nio.file.Path;
 

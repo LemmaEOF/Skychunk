@@ -1,4 +1,4 @@
-package space.bbkr.skychunk;
+package gay.lemmaeof.skychunk;
 
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;
@@ -22,7 +22,7 @@ public class Skychunk implements ModInitializer {
 			if (!configFile.exists()) configFile.createNewFile();
 			Properties config = new Properties();
 			config.load(new FileInputStream(configFile));
-			if (!config.contains("chunkRemovalRate")) config.setProperty("chunkRemovalRate", "95");
+			if (!config.stringPropertyNames().contains("chunkRemovalRate")) config.setProperty("chunkRemovalRate", "95");
 			chunkRemovalRate = Integer.parseInt(config.getProperty("chunkRemovalRate"));
 			config.store(new FileOutputStream(configFile), "Edit the chunk removal rate here, as a number from 0 to 100. Default: 95");
 		} catch (IOException e) {
